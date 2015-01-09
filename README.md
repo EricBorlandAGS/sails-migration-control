@@ -42,7 +42,7 @@ were or were not installed in each version.
 
 	Put your scripts inside the migrations folder or the one which you choose and lift the 
 	server. Please, don't repeat names, my suggestion:
-		yyyyMMdd_some_description_name
+		yyyyMMdd_some_descriptive_name
 	
 ### Example of script
 	
