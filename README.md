@@ -3,8 +3,9 @@ sails-migration-control
 
 ## Purpose
 
-sails-migration-control provides an easy way to manage database migrations with sails, although lets you run any
-kind of script **encoded in utf8**. You do not have to worry about which scripts were or were not installed in each version.
+sails-migration-control provides an easy way to manage database migrations with sails, although lets 
+you run any kind of script **encoded in utf8**. You do not have to worry about which scripts 
+were or were not installed in each version.
 
 
 ## Install
@@ -15,7 +16,8 @@ kind of script **encoded in utf8**. You do not have to worry about which scripts
 	
 		sails generate model migration
 		
-	3. Create a new folder migrations inside /config (Not mandatory, you put your scripts where you want, but all in one location)
+	3. Create a new folder migrations inside /config (Not mandatory, you put your scripts 
+	where you want, but all in one location)
 	
 	4. Indicate this directory in the global configuration variables:
 	
@@ -38,7 +40,8 @@ kind of script **encoded in utf8**. You do not have to worry about which scripts
 
 ## Use
 
-	Put your scripts inside the migrations folder or the one which you choose and lift the server.
+	Put your scripts inside the migrations folder or the one which you choose and lift the 
+	server.
 	
 ### Example of script
 	
