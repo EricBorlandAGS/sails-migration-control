@@ -40,10 +40,10 @@ kind of script **encoded in utf8**. You do not have to worry about which scripts
 
 	Put your scripts inside the migrations folder or the one which you choose and lift the server.
 	
-	### Example of script
+### Example of script
 	
-		Model.native(function(err, collection) {
-			collection.ensureIndex( { "createdAt": 1 }, { expireAfterSeconds: 3600 }, function(err, result) {
-				if (err) callback(err);
-			});
+	Model.native(function(err, collection) {
+		collection.ensureIndex( { "createdAt": 1 }, { expireAfterSeconds: 3600 }, function(err, result) {
+			if (err) callback(err);
 		});
+	});
