@@ -37,6 +37,13 @@ were or were not installed in each version.
 		* options -> Object
 		* callback -> Function
 
+	The migration scripts files should export the migration in a doMigration property
+```javascript
+ module.exports = {
+    doMigration: migration
+  }
+```
+
 
 ## Use
 
@@ -46,8 +53,16 @@ were or were not installed in each version.
 	
 ### Example of script
 	
-	Model.native(function(err, collection) {
-		collection.ensureIndex( { "createdAt": 1 }, { expireAfterSeconds: 3600 }, function(err, result) {
-			if (err) callback(err);
-		});
-	});
+```javascript
+  function migration(callback) {
+    Model.native(function(err, collection) {
+      collection.ensureIndex( { "createdAt": 1 }, { expireAfterSeconds: 3600 }, function(err, result) {
+        return callback(err);
+      });
+    });
+  }
+
+  module.expotrs = {
+    doMigration: migration
+  }
+```
